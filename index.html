@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box_card">
+        <div class="top_section">
+          <img src="./images/bg-card-back.png" alt="" />
+        </div>
+
+        <div class="buttom_section">
+          <div class="content">
+            <img src="./images/bg-card-front.png" alt="card-front" />
+
+            <form action="">
+              <div class="input">
+                <label>Cardholder Name</label>
+                <input type="text" placeholder="e.g. Jane Appleseed" />
+              </div>
+              <div class="input">
+                <label>Card Number</label>
+                <input
+                  type="text"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                  id="error_inputNum"
+                  class="hidden"
+                />
+                <p id="error_num"></p>
+              </div>
+              <div class="input_flex">
+                <div class="input_top">
+                  <label> Exp. Date (MM/YY)</label>
+                  <input
+                    type="number"
+                    placeholder="MM"
+                    id="MM"
+                    class="hidden"
+                  />
+                  <input
+                    type="number"
+                    placeholder="YY"
+                    id="DD"
+                    class="hidden"
+                  />
+                  <p id="error_exp"></p>
+                </div>
+                <div class="input_down">
+                  <label>CVC</label>
+                  <input
+                    type="number"
+                    placeholder=" e.g. 123"
+                    id="erroe_cvInput"
+                    class="hidden"
+                  />
+                  <p id="erroe_cvc"></p>
+                </div>
+              </div>
+            </form>
+            <p class="Sub_btn">Confirm</p>
+          </div>
+          <div class="hide">
+            <div class="content">
+              <div class="top">
+                <img src="./images/icon-complete.svg" alt="" />
+              </div>
+              <div class="down">
+                <h2>THANK YOU!</h2>
+                <p>We've added your card details</p>
+              </div>
+              <p class="Sub_btn">Continue</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Completed state start -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Unique Gf😎</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

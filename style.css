@@ -1,0 +1,147 @@
+.attribution {
+        font-size: 11px;
+        text-align: center;
+        
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  /* ### Primary */
+    --Error:hsl(0, 100%, 66%);
+    --active_input:Linear gradient : hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    /* ### Neutral */
+    --White : hsl(0, 0%, 100%);
+    --Light_grayish_violet: hsl(270, 3%, 87%);
+    --Dark_grayish-violet: hsl(279, 6%, 55%);
+    --Very_dark_violet: hsl(278, 68%, 11%);
+    
+}
+
+
+/* .container{
+   
+} */
+
+.box_card{
+    width: 375px;
+    max-width: 1440px;
+    height: fit-content;
+    overflow: hidden;
+    background: var(--White); 
+}
+
+.top_section{
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/bg-main-mobile.png);
+    position: relative;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.top_section img{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    
+}
+
+.hidden{
+    border: 2px solid var(--Error) ;
+    
+}
+
+.content{
+    position: relative;
+}
+
+.content img {
+    width: 77%;
+    height: 55%;
+    position: absolute;
+    top: -69%;
+    left: 0%;
+}
+
+.buttom_section{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+ 
+.input {
+ margin-bottom: 15px;
+}
+.input label{
+display: block;
+margin-bottom: 5px;
+font-size: 18px;
+color: var(--Very_dark_violet);
+}
+
+input[type= "text"]{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid var(--Light_grayish_violet);
+    width: 100%;
+    
+}
+::placeholder{
+    color: var(--Dark_grayish-violet);
+    opacity: 20%;
+}
+.input_flex{
+    display: flex;
+    align-content: center;
+    
+ }
+
+ .input_top{
+    margin-right: 18px;
+ }
+ .input_top label{
+    display: block;
+    margin-bottom: 5px;
+ }
+ input[type= "number"],:focus{
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--Light_grayish_violet);
+ }
+
+ .input_down label{
+    display: block;
+    margin-bottom: 5px;
+ }
+
+
+ .input_down [type= "number"] :focus{
+    width: 100px;
+    border-radius: 5px;
+    
+ }
+ form{
+    margin-bottom: 26px;
+ }
+ .Sub_btn{
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--White);
+    border-radius: 10px;
+    background: var(--Very_dark_violet);
+ }
+
+.hide{
+    display: none;
+}
