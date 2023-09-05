@@ -1,11 +1,12 @@
 .attribution {
-        font-size: 11px;
-        text-align: center;
-        
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+    font-size: 11px;
+    text-align: center;
+    
+    
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 *{
     padding: 0;
@@ -25,20 +26,23 @@
     
 }
 
-
-/* .container{
-   
-} */
-
-.box_card{
-    width: 375px;
-    max-width: 1440px;
-    height: fit-content;
-    overflow: hidden;
-    background: var(--White); 
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: silver;
 }
 
-.top_section{
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 375px;
+    background: var(--White);
+}
+
+.left_section{
     width: 100%;
     height: 250px;
     background-image: url(./images/bg-main-mobile.png);
@@ -46,35 +50,36 @@
     background-position: cover;
     background-repeat: no-repeat;
 }
-.top_section img{
-    width: 70%;
+
+
+.front_card img {
+    width: 254px;
     height: 60%;
     position: absolute;
-    top: 18%;
-    left: 25%;
-    
-}
+    top: 58%;
+    right: 25%;
+    background-position:contain;
+    background-repeat: no-repeat;
+    z-index:3;
 
-.hidden{
-    border: 2px solid var(--Error) ;
-    
 }
-
-.content{
-    position: relative;
-}
-
-.content img {
-    width: 77%;
-    height: 55%;
+.back_card img {
+    width: 254px;
+    height: 60%;
     position: absolute;
-    top: -69%;
-    left: 0%;
+    top: 25%;
+    left: 25%;
+    background-position:contain;
+    background-repeat: no-repeat;
 }
 
-.buttom_section{
-    padding: 20px;
-    margin-top: 50px;
+.Card_section{
+    padding: 1.5em;    
+}
+
+.form{
+    margin-top: 4rem;
+    display: block;
 }
 
  
@@ -93,55 +98,66 @@ input[type= "text"]{
     padding: 10px;
     border: 1px solid var(--Light_grayish_violet);
     width: 100%;
-    
 }
+
 ::placeholder{
     color: var(--Dark_grayish-violet);
     opacity: 20%;
 }
-.input_flex{
-    display: flex;
-    align-content: center;
-    
- }
 
- .input_top{
-    margin-right: 18px;
- }
- .input_top label{
-    display: block;
-    margin-bottom: 5px;
- }
- input[type= "number"],:focus{
-    width: 70px;
-    padding: 5px;
+ input[type= "number"]{
+    width: 80px;
+    padding: 8px;
     border-radius: 5px;
     outline: none;
     border: 1px solid var(--Light_grayish_violet);
  }
 
- .input_down label{
+ label{
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
  }
 
+ .input-row{
+   display: flex;
+   align-items: center;
+   gap: 13px;
+   width: 100%;
+ }
 
- .input_down [type= "number"] :focus{
-    width: 100px;
-    border-radius: 5px;
-    
- }
- form{
-    margin-bottom: 26px;
- }
- .Sub_btn{
-    padding: 15px 10px;
+ .btn{
+    background-color: var(--Very_dark_violet);
+    margin-top: 20px;
+    padding: 13px 20px;
     text-align: center;
-    color: var(--White);
     border-radius: 10px;
-    background: var(--Very_dark_violet);
+    color: var(--White);
  }
 
-.hide{
+
+ /* card-modle section */
+ .modle-card{
     display: none;
-}
+    text-align: center;
+    line-height: 34px;
+    margin-top: 60px;
+ }
+
+ .modle-card  img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+ }
+
+ .modle-card h1{
+    font-weight: 500;
+    margin-bottom: 1rem;
+ }
+ .modle-card p{
+   color: var(--Dark_grayish-violet);
+    margin-bottom: 1rem;
+ }
+
+ #btn_modle{
+    margin-top: 3rem;
+ }
