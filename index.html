@@ -18,78 +18,60 @@
   </head>
   <body>
     <div class="container">
-      <div class="box_card">
-        <div class="top_section">
-          <img src="./images/bg-card-back.png" alt="" />
-        </div>
-
-        <div class="buttom_section">
-          <div class="content">
-            <img src="./images/bg-card-front.png" alt="card-front" />
-
-            <form action="">
-              <div class="input">
-                <label>Cardholder Name</label>
-                <input type="text" placeholder="e.g. Jane Appleseed" />
-              </div>
-              <div class="input">
-                <label>Card Number</label>
-                <input
-                  type="text"
-                  placeholder="e.g. 1234 5678 9123 0000"
-                  id="error_inputNum"
-                  class="hidden"
-                />
-                <p id="error_num"></p>
-              </div>
-              <div class="input_flex">
-                <div class="input_top">
-                  <label> Exp. Date (MM/YY)</label>
-                  <input
-                    type="number"
-                    placeholder="MM"
-                    id="MM"
-                    class="hidden"
-                  />
-                  <input
-                    type="number"
-                    placeholder="YY"
-                    id="DD"
-                    class="hidden"
-                  />
-                  <p id="error_exp"></p>
-                </div>
-                <div class="input_down">
-                  <label>CVC</label>
-                  <input
-                    type="number"
-                    placeholder=" e.g. 123"
-                    id="erroe_cvInput"
-                    class="hidden"
-                  />
-                  <p id="erroe_cvc"></p>
-                </div>
-              </div>
-            </form>
-            <p class="Sub_btn">Confirm</p>
+      <div class="flex_section">
+        <div class="left_section">
+          <div class="front_card">
+            <img src="./images/bg-card-front.png" alt="" />
           </div>
-          <div class="hide">
-            <div class="content">
-              <div class="top">
-                <img src="./images/icon-complete.svg" alt="" />
-              </div>
-              <div class="down">
-                <h2>THANK YOU!</h2>
-                <p>We've added your card details</p>
-              </div>
-              <p class="Sub_btn">Continue</p>
+          <div class="back_card">
+            <img src="./images/bg-card-back.png" alt="" />
+          </div>
+        </div>
+        <div class="Card_section">
+          <div class="form">
+            <div class="input">
+              <label>Cardholder name</label>
+              <input
+                type="text"
+                placeholder="e.g. jane Appleseed"
+                id="card-name"
+              />
+              <span id="error_text"></span>
             </div>
+            <div class="input">
+              <label>Card number</label>
+              <input
+                type="number"
+                placeholder="e.g. 1234 5678 9123 0000"
+                id="card-number"
+              />
+              <span id="error_unmber"></span>
+            </div>
+            <div class="input-row">
+              <div class="input-exp">
+                <label> Exp. Date (MM/YY)</label>
+                <input type="number" placeholder="MM" id="mm" />
+                <input type="number" placeholder="YY" id="yy" />
+                <span id="error_Exp"></span>
+              </div>
+              <div class="input_cvc">
+                <label>Cvc</label>
+                <input type="number" placeholder="e.g. 123" id="cvc" />
+                <span id="error_cvc"></span>
+              </div>
+            </div>
+            <p class="btn" id="btn_form">confirm</p>
+          </div>
+          <!-- modle card -->
+          <div class="modle-card">
+            <img src="./images/icon-complete.svg" alt="" />
+            <h1>Thank you !</h1>
+            <p>We've added Card detials</p>
+            <p class="btn" id="btn_modle">continue</p>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Completed state start -->
 
     <div class="attribution">
       Challenge by
